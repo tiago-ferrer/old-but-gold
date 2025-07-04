@@ -174,7 +174,7 @@ A visibilidade em Java é um conceito fundamental que controla o acesso a métod
 **Exemplo**:
 
 ```java
-public class pessoa.Pessoa {
+public class Pessoa {
 
     private String nome; // Atributo privado
 
@@ -189,7 +189,7 @@ public class pessoa.Pessoa {
 }
 ```
 ```java
-public class Cliente extends pessoa.Pessoa {
+public class Cliente extends Pessoa {
 
     public void mostrarNome() {
         System.out.println(getNome()); // Acessa método protegido da superclasse
@@ -286,7 +286,7 @@ Carro carro2 = new Carro("Volkswagen", 2024); // Usa o construtor com parâmetro
 Exemplo:
 
 ```java
-public class pessoa.Pessoa {
+public class Pessoa {
     private String nome;
     private int idade;
 
@@ -313,7 +313,7 @@ public class pessoa.Pessoa {
 Exemplo:
 
 ```java
-public class pessoa.Pessoa {
+public class Pessoa {
     private String nome;
     private int idade;
 
@@ -364,7 +364,7 @@ Gets e sets são métodos especiais em Java que servem para acessar e modificar 
 **Exemplo**:
 
 ```java
-public class pessoa.Pessoa {
+public class Pessoa {
 
     private String nome;
     private int idade;
