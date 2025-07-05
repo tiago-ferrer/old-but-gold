@@ -25,4 +25,20 @@ public class MedicoDto {
     public Medico toEntity() {
         return new Medico(cpf, nome, especialidade, registro);
     }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    public void setRegistro(String registro) {
+        this.registro = registro;
+    }
 }
