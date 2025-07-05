@@ -5,10 +5,7 @@ import br.com.fiap.susdemo.model.Paciente;
 import br.com.fiap.susdemo.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/paciente")
@@ -21,7 +18,7 @@ public class PacienteController {
     }
 
     @PostMapping
-    public ResponseEntity<PacienteDto> createPaciente(PacienteDto pacienteDto) {
+    public ResponseEntity<PacienteDto> createPaciente(@RequestBody PacienteDto pacienteDto) {
         final Paciente savedPaciente = pacienteService.save(pacienteDto.toEntity());
         return ResponseEntity.ok(PacienteDto.from(savedPaciente));
     }

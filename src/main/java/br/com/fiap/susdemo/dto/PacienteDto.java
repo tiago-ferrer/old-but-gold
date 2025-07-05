@@ -22,4 +22,16 @@ public class PacienteDto {
     public static PacienteDto from(Paciente paciente){
         return new PacienteDto(paciente.getCpf(), paciente.getNome(), paciente.getDoencaCronica());
     }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDoencaCronica(String doencaCronica) {
+        this.doencaCronica = doencaCronica;
+    }
 }
