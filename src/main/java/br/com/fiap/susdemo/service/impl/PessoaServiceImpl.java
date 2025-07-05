@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-class PessoaServiceImpl implements PessoaService {
+final class PessoaServiceImpl implements PessoaService {
 
     private final PessoaRepository pessoaRepository;
 

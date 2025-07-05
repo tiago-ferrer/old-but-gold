@@ -6,7 +6,7 @@ import br.com.fiap.susdemo.service.PacienteService;
 import org.springframework.stereotype.Service;
 
 @Service
-class PacienteServiceImpl implements PacienteService {
+final class PacienteServiceImpl implements PacienteService {
 
     private final PacienteRepository pacienteRepository;
 

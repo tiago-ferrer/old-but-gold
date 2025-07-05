@@ -6,7 +6,7 @@ import br.com.fiap.susdemo.service.MedicoService;
 import org.springframework.stereotype.Service;
 
 @Service
-class MedicoServiceImpl implements MedicoService {
+final class MedicoServiceImpl implements MedicoService {
 
     private final MedicoRepository medicoRepository;
 
