@@ -1,7 +1,6 @@
 package br.com.fiap.susdemo.controller;
 
 import br.com.fiap.susdemo.dto.PessoaProjection;
-import br.com.fiap.susdemo.model.Pessoa;
 import br.com.fiap.susdemo.service.PessoaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
