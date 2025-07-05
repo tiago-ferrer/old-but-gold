@@ -34,4 +34,16 @@ public class PacienteDto {
     public void setDoencaCronica(String doencaCronica) {
         this.doencaCronica = doencaCronica;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDoencaCronica() {
+        return doencaCronica;
+    }
 }
