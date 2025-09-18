@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/paciente")
+@RequestMapping("/pacientes")
 public class PacienteController {
 
     private final PacienteService pacienteService;
@@ -21,7 +21,7 @@ public class PacienteController {
 
     @PostMapping
     public ResponseEntity<PacienteDto> createPaciente(@RequestBody PacienteDto pacienteDto) {
-        final Paciente savedPaciente = pacienteService.save(pacienteDto.toEntity());
-        return ResponseEntity.ok(PacienteDto.from(savedPaciente));
+        final Paciente paciente = this.pacienteService.save(pacienteDto.toEntity());
+        return ResponseEntity.ok(new PacienteDto(paciente.getCpf(),paciente.getNome(),paciente.getDoencaCronica()));
     }
 }

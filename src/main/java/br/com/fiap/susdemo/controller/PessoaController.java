@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pessoa")
+@RequestMapping("/pessoas")
 public class PessoaController {
 
     private final PessoaService pessoaService;
@@ -20,7 +20,7 @@ public class PessoaController {
     }
 
     @GetMapping
-    public ResponseEntity<List<PessoaProjection>> getAll() {
+    public ResponseEntity<List<PessoaProjection>> getAllPessoas() {
         return ResponseEntity.ok(this.pessoaService.findAll());
     }
 
